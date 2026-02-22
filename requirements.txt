@@ -1,0 +1,10 @@
+streamlit
+opencv-python-headless
+easyocr
+tensorflow
+pandas
+numpy
+pillow
+rapidfuzz
+openpyxl
+nest_asyncio
