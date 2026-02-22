@@ -60,7 +60,7 @@ st.title("💊 Fake Medicine Detection System")
 def load_cnn():
 
     model = tf.keras.models.load_model(
-        r"C:\Users\newt4\OneDrive\Desktop\BE_Project\tamper_detector_resnet50v2.keras",
+        r"tamper_detector_resnet50v2.keras",
         compile=False
     )
 
@@ -107,11 +107,11 @@ def cnn_predict(img):
 def load_data():
 
     real_df = pd.read_excel(
-        r"C:\Users\newt4\OneDrive\Desktop\BE_Project\Real_Medicines_dataset.xlsx"
+        r"Real_Medicines_dataset.xlsx"
     )
 
     banned_df = pd.read_excel(
-        r"C:\Users\newt4\OneDrive\Desktop\BE_Project\Banned_Pharma_Companies.xlsx"
+        r"Banned_Pharma_Companies.xlsx"
     )
 
     return real_df, banned_df
